@@ -1,7 +1,7 @@
 var circunferencia = require ('./circunferencia');
 var estadistica    = require ('./estadistica');
 var cadena         = require ('./cadena');
-
+var lectura        = require ('./leerCSV');
 var objeto1 = circunferencia(12);
 
 console.log("Area " + objeto1.area());
@@ -30,3 +30,12 @@ console.log("La cadena " + str + " ¿es un número? "  + string.cadenaEsNumero()
 console.log("La cadena " + str + " en mayúscula  "  + string.cadenaEnMayuscula());
 console.log("La cadena " + str + " al revés  "  + string.cadenaAlReves());
 console.log("La cadena " + str + " ¿es palíndromo? "  + string.esPalindromo());
+console.log('----------------------------');
+
+
+lectura(function (datos1, datos2, datos3, datos4) {
+  console.log(datos1[0]);
+  console.log(datos2);
+  console.log(datos3);
+  console.log(datos4);
+})
